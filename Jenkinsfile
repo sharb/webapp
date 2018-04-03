@@ -1,3 +1,5 @@
+properties([pipelineTriggers([githubPush()])])
+
 node {
-   echo 'Hello World!'
+    git url: 'https://github.com/sharb/webapp.git', branch: 'master'
 }
