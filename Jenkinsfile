@@ -6,6 +6,6 @@ node ('master'){
         git url: 'https://github.com/sharb/hook-test.git', branch: 'master'
     }
     stage('build'){
-        echo 'cat README.md'   
+        sh 'cat README.md'   
     }
 }
