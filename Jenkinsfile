@@ -5,7 +5,7 @@ node ('master'){
         properties([pipelineTriggers([[$class: 'GitHubPushTrigger']])])
         git url: 'https://github.com/sharb/hook-test.git', branch: 'master'
     }
-    stage('build'){
+    stage('build cat'){
         sh 'cat README.md'   
     }
 }
