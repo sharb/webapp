@@ -5,7 +5,7 @@ node ('master'){
         properties([pipelineTriggers([[$class: 'GitHubPushTrigger']])])
         git url: 'https://github.com/sharb/webapp.git', branch: 'master'
     }
-    stage('build'{
+    stage('build'){
         echo 'build'   
     }
 }
